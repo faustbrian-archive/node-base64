@@ -32,6 +32,9 @@
     "lint": "stdlint && deno fmt source",
     "prepublishOnly": "pnpm run build"
   },
+  "dependencies": {
+    "bcrypto": "^5.4.0"
+  },
   "devDependencies": {
     "@faustbrian/stdlint": "^1.0.0",
     "@sindresorhus/tsconfig": "^2.0.0",

@@ -1,4 +1,7 @@
+import { encoding } from "bcrypto";
+
 export const encode = (content: string): string =>
-  Buffer.from(content, "utf8").toString("base64");
+  encoding.base64.encode(Buffer.from(content));
+
 export const decode = (content: string): Buffer =>
-  Buffer.from(content, "base64");
+  encoding.base64.decode(content);
